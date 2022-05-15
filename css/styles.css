@@ -7981,6 +7981,13 @@ textarea.form-control-lg {
   visibility: hidden !important;
 }
 
+.map-icon {
+    width: 48px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
