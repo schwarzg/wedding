@@ -84,22 +84,19 @@
                         <h2 class="text-white mt-0">마음 전하시는 곳</h2>
                         <hr class="divider divider-light" />
 			
-							<button onclick="copy()">이주희</button>
-
-							<script>
-								function copyToClipboard(val) {
+						<button onclick="copy('카카오뱅크 3333-09-5924965 이주희')">이주희</button>
+						<script>
+							function copy(val) {
 								const t = document.createElement("textarea");
 								  document.body.appendChild(t);
 								  t.value = val;
 								  t.select();
 								  document.execCommand('copy');
 								  document.body.removeChild(t);
-								}
-								function copy() {
-								  copyToClipboard('카카오뱅크 3333-09-5924965');
 								  alert("복사되었습니다");
-								}
-							</script>
+							}
+						</script>
+						<button onclick="copy('우리은행 1002-753-234138 김민희')">김민희</button>
 					</div>
 				</div>
             </div>
