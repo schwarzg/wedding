@@ -83,6 +83,24 @@
 				</div>
             </div>
         </section>
+		<div class="container px-4 px-lg-5">
+			<button onclick="copy()">COPY</button>
+
+			<script>
+			function copyToClipboard(val) {
+			  const t = document.createElement("textarea");
+			  document.body.appendChild(t);
+			  t.value = val;
+			  t.select();
+			  document.execCommand('copy');
+			  document.body.removeChild(t);
+			}
+			function copy() {
+			  copyToClipboard('Hello World');
+			  console.log('Copied!');
+			}
+			</script>
+		</div>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
@@ -194,16 +212,9 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-						<div class="col-lg-5 float-start text-center">	
-							<p class="text-center mb-4">뮤지엄 산</p>
-							<p class="text-center mb-4">원주시 지정면 오크밸리2길 260</p>
-							<img class="img-fluid" src="assets/img/profile/Groom.jpg">
-						</div>
-						<div class="col-lg-5 float-end text-center">	
-							<p class="text-center mb-4">치악산 둘레길 야외카페</p>
-							<p class="text-center mb-4">원주시 소초면 황골로, 범골길</p>
-							<img class="img-fluid" src="assets/img/profile/Bride.jpg">
-						</div>
+						<p class="text-center mb-4">치악산 둘레길 야외카페</p>
+						<p class="text-center mb-4">원주시 소초면 황골로와 범골길에<br>예쁜 야외 카페가 많습니다.<br>차를 가져 오신 분들은 잠시 쉬어가세요.</p>
+						<img class="img-fluid" src="assets/img/profile/Bride.jpg">
 					</div>
 				</div>
             </div>
