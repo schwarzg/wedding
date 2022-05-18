@@ -80,24 +80,6 @@
 							<p class="text-white-75 mb-4">김일봉 · 유성희 <span class="text-white-50 small"> 장녀</span> <span class="bold">김민희</span></p>	
 							<img class="img-fluid" src="assets/img/profile/Bride.jpg">
 					</div>
-                    <div class="col-lg-8 text-center">	
-                        <h2 class="text-white mt-0">마음 전하시는 곳</h2>
-                        <hr class="divider divider-light" />
-			
-						<button onclick="copy('카카오뱅크 3333-09-5924965 이주희')">이주희</button>
-						<script>
-							function copy(val) {
-								const t = document.createElement("textarea");
-								  document.body.appendChild(t);
-								  t.value = val;
-								  t.select();
-								  document.execCommand('copy');
-								  document.body.removeChild(t);
-								  alert("복사되었습니다");
-							}
-						</script>
-						<button onclick="copy('우리은행 1002-753-234138 김민희')">김민희</button>
-					</div>
 				</div>
             </div>
         </section>
@@ -203,6 +185,31 @@
                 </div>
             </div>
         </section>
+		<section class="page-section bg-white" id="extra">
+			<div class="container px-4 px-lg-5 text-center">
+				<div class="col-lg-8 text-center">	
+					<h2 class="text-white mt-0">마음 전하시는 곳</h2>
+                    <hr class="divider divider-light" />
+					<p class="text-center mb-4">누르면 복사됩니다.</p>
+			
+					<button onclick="copy('농협 302-1065-3419-31 이상덕')">이상덕</button>
+					<button onclick="copy('카카오뱅크 3333-09-5924965 이주희')">이주희</button>
+					<button onclick="copy('하나은행 602-157-287875 유성희')">유성희</button>
+					<button onclick="copy('우리은행 1002-753-234138 김민희')">김민희</button>
+					<script>
+						function copy(val) {
+							const t = document.createElement("textarea");
+							  document.body.appendChild(t);
+							  t.value = val;
+							  t.select();
+							  document.execCommand('copy');
+							  document.body.removeChild(t);
+							  alert("복사되었습니다.");
+						}
+					</script>
+				</div>
+			</div>
+		</section>
         <!-- Services-->
         <section class="page-section" id="tour">
             <div class="container px-4 px-lg-5">
