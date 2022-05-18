@@ -6532,6 +6532,14 @@ textarea.form-control-lg {
   z-index: 1030;
 }
 
+.fixed-top-scroll{
+  position: fixed;
+  top: -header.height;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  transition: top 0.5s;
+}
 .fixed-bottom {
   position: fixed;
   right: 0;
