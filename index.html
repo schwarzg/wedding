@@ -193,21 +193,10 @@
 					    <hr class="divider" />
 						<p class="text-center mb-4">누르면 복사됩니다.</p>
 				
-						<button onclick="copy('농협 302-1065-3419-31 이상덕')">이상덕</button>
+						<button type="button" class="btn btn-primary btn-xl" onclick="copy('농협 302-1065-3419-31 이상덕')">이상덕</button>
 						<button onclick="copy('카카오뱅크 3333-09-5924965 이주희')">이주희</button>
 						<button onclick="copy('하나은행 602-157-287875 유성희')">유성희</button>
 						<button onclick="copy('우리은행 1002-753-234138 김민희')">김민희</button>
-						<script>
-							function copy(val) {
-								const t = document.createElement("textarea");
-								  document.body.appendChild(t);
-								  t.value = val;
-								  t.select();
-								  document.execCommand('copy');
-								  document.body.removeChild(t);
-								  alert("복사되었습니다.");
-							}
-						</script>
 					</div>
 				</div>
 			</div>
@@ -223,7 +212,7 @@
                     <div class="col-lg-8 text-center">
 						<p class="text-center mb-4">치악산 둘레길 야외카페</p>
 						<p class="text-center mb-4">원주시 소초면 황골로와 범골길에<br>예쁜 야외 카페가 많습니다.<br>차를 가져 오신 분들은 잠시 쉬어가세요.</p>
-						<img class="img-fluid" src="assets/img/profile/Bride.jpg">
+						<img class="img-fluid" src="assets/img/location/cafes.png">
 					</div>
 				</div>
             </div>
@@ -239,6 +228,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+		<script>
+			function copy(val) {
+				const t = document.createElement("textarea");
+				  document.body.appendChild(t);
+				  t.value = val;
+				  t.select();
+				  document.execCommand('copy');
+				  document.body.removeChild(t);
+				  alert("복사되었습니다.");
+			}
+		</script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
