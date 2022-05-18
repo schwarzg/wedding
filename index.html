@@ -233,13 +233,14 @@
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5">
 				<div class="small text-center">
-					<a id="kakao-link-btn" href="javascript:;">
+					<a id="kakao-link-btn" href="javascript:sendLink()">
 						<img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png"/> 카카오톡 공유하기
 					</a>
 					<!--Kakao share JS-->
 					<script type="text/javascript">
 					Kakao.init('6cc8431b4e6b2deb2b265c83a31c01ea');
-					Kakao.Link.createDefaultButton(
+					function sendLink():
+					Kakao.Link.sendDefault(
 						{
 							container: '#kakao-link-btn',
 							objectType: 'feed',
@@ -262,7 +263,7 @@
 								},
 							],
 						},	
-					);
+					););
 					</script>
 				</div>
 				<div class="small text-center text-muted">Copyright &copy; 2022 - Juhee and Minhee</div>
