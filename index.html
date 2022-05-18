@@ -80,27 +80,30 @@
 							<p class="text-white-75 mb-4">김일봉 · 유성희 <span class="text-white-50 small"> 장녀</span> <span class="bold">김민희</span></p>	
 							<img class="img-fluid" src="assets/img/profile/Bride.jpg">
 					</div>
+                    <div class="col-lg-8 text-center">	
+                        <h2 class="text-white mt-0">마음 전하시는 곳</h2>
+                        <hr class="divider divider-light" />
+			
+							<button onclick="copy()">이주희</button>
+
+							<script>
+								function copyToClipboard(val) {
+								const t = document.createElement("textarea");
+								  document.body.appendChild(t);
+								  t.value = val;
+								  t.select();
+								  document.execCommand('copy');
+								  document.body.removeChild(t);
+								}
+								function copy() {
+								  copyToClipboard('카카오뱅크 3333-09-5924965');
+								  alert("복사되었습니다");
+								}
+							</script>
+					</div>
 				</div>
             </div>
         </section>
-		<div class="container px-4 px-lg-5">
-			<button onclick="copy()">COPY</button>
-
-			<script>
-			function copyToClipboard(val) {
-			  const t = document.createElement("textarea");
-			  document.body.appendChild(t);
-			  t.value = val;
-			  t.select();
-			  document.execCommand('copy');
-			  document.body.removeChild(t);
-			}
-			function copy() {
-			  copyToClipboard('Hello World');
-			  console.log('Copied!');
-			}
-			</script>
-		</div>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
