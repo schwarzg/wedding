@@ -3934,6 +3934,11 @@ textarea.form-control-lg {
   border-top-right-radius: 0;
 }
 
+.nav-bar{
+	position: relative;
+	animation: pulse 1s ease infinite;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
